@@ -1668,28 +1668,22 @@ fbq('track', 'PageView');
 
             
  
-        <form id="order61" class="order_form">
-    <input type="hidden" name="task" value="process">
-    <input type="hidden" name="country" value="ua">
+      <form id="order61" class="order_form">
+  <input type="hidden" name="task" value="process">
+  <input type="hidden" name="country" value="ua">
 
-    <!-- обовʼязкове поле для бота -->
-    <select name="size" class="field" style="display:none">
-        <option value="1" selected>1</option>
-    </select>
+  <input class="field" type="text" name="name" placeholder="Введіть Ваше ім'я та прізвище" required>
+  <input class="field" type="tel" name="phone" placeholder="Введіть Ваш номер телефону" required>
 
-    <input class="field" type="text" name="name" placeholder="Введіть Ваше ім'я та прізвище" required>
-    <input class="field" type="tel" name="phone" placeholder="Введіть Ваш номер телефону" required>
-
-    <!-- нове поле для вибору кількості, з таким же класом -->
-    <select name="quantity" class="field" required>
-        <option value="" disabled selected>Оберіть кількість</option>
-        <option value="1 шт 199 грн">1 шт 199 грн </option>
-        <option value="2 шт 359 грн (179 грн / шт)">2 шт 359 грн (179 грн / шт)</option>
-        <option value="4 шт 599 грн (150 грн / шт)">4 шт 599 грн (150 грн / шт)</option>
-        <option value="6 шт 779 грн (130 грн / шт)">6 шт 779 грн (130 грн / шт)</option>
-        <option value="інша кількість">інша кількість </option>
-    </select>
-
+  <!-- ОБОВʼЯЗКОВЕ поле для бота (і воно ж вибір кількості) -->
+  <select name="size" class="field" required>
+    <option value="" disabled selected>Оберіть кількість</option>
+    <option value="1 шт — 199 грн">1 шт — 199 грн</option>
+    <option value="2 шт — 359 грн (179 грн/шт)">2 шт — 359 грн (179 грн/шт)</option>
+    <option value="4 шт — 599 грн (149 грн/шт)">4 шт — 599 грн (149 грн/шт)</option>
+    <option value="6 шт — 779 грн (129 грн/шт)">6 шт — 779 грн (129 грн/шт)</option>
+    <option value="Інша кількість (уточнити менеджеру)">Інша кількість (уточнити менеджеру)</option>
+  </select>
     <button type="submit" class="button">Оформити замовлення</button>
 </form>
 
